@@ -13,6 +13,9 @@ namespace Angular2MVC
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Validate", "validate",new {controller = "Home", action = "Login"});
+            routes.MapRoute("Home", "main", new { controller = "Home", action = "Home" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

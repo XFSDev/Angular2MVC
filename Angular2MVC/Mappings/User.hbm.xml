@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Angular2MVC" namespace="Angular2MVC.Models" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="User" table="user" lazy="true" >
+    <id name="Userid" column="userid" />
+    <property name="Username">
+      <column name="username" sql-type="varchar(45)" not-null="false" />
+    </property>
+    <property name="Password">
+      <column name="password" sql-type="varchar(45)" not-null="false" />
+    </property>
+    <property name="Emailid">
+      <column name="emailid" sql-type="varchar(45)" not-null="false" />
+    </property>
+    <property name="Role">
+      <column name="role" sql-type="varchar(45)" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>
